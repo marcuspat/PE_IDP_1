@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backstage
+  namespace: backstage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backstage
+  template:
+    metadata:
+      labels:
+        app: backstage
+    spec:
+      containers:
+      - name: backstage
+        image: gcr.io/your-project-id/pe-idp-1-portal:latest
+        ports:
+        - containerPort: 7007
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backstage-svc
+  namespace: backstage
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 7007
+  selector:
+    app: backstage
