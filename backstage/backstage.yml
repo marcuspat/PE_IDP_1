@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backstage
-        image: gcr.io/your-project-id/pe-idp-1-portal:latest
+        image: gcr.io/peidp01/pe-idp-1-portal:latest
         ports:
         - containerPort: 7007
 ---

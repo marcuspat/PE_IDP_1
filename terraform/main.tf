@@ -1,5 +1,5 @@
 provider "google" {
-  project = "your-project-id"
+  project = "peidp01"
   region  = "us-central1"
 }
 resource "google_container_cluster" "pe_idp_1" {

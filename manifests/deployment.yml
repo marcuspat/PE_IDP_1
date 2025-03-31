@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: gcr.io/your-project-id/pe-idp-1-app:latest
+        image: gcr.io/peidp01/pe-idp-1-app:latest
         ports:
         - containerPort: 5000
 ---

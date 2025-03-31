@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-PROJECT_ID="your-project-id"
+PROJECT_ID="peidp01"
 CLUSTER_NAME="pe-idp-1-cluster"
 REGION="us-central1-a"
 
