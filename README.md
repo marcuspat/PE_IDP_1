@@ -10,7 +10,7 @@ An Internal Developer Platform with GKE, Terraform, ArgoCD, GitHub Actions, Snyk
 
 ## Setup
 1. Clone: `git clone https://github.com/yourusername/PE_IDP_1`
-2. Infra Up: `cd terraform && terraform apply`
+2. Infra Up: `cd terraform && terraform init && terraform apply`
 3. Deploy: `./manage.sh up`
 4. Teardown: `./manage.sh down && cd terraform && terraform destroy`
 
